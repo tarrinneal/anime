@@ -1,5 +1,5 @@
 {
-  "name": "Anime.js",
+  "name": "animejs",
   "version": "1.0.0",
   "description": "Animejs",
   "main": "index.js",
@@ -13,6 +13,11 @@
   "keywords": [],
   "author": "Tarrin",
   "license": "ISC",
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
   "dependencies": {
     "animejs": "^3.2.1",
     "axios": "^0.20.0",
