@@ -1,7 +1,42 @@
 import React from 'react';
+import anime from '../../../node_modules/animejs/lib/anime.es.js'
 
-const App = () => {
-  return <div>loaded</div>
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+
+    }
+  }
+
+  handleBarClick (e) {
+    anime({
+      targets: '#leftBar',
+      translateY: [0, 150],
+      width: ['100%', '500%'],
+      backgroundColor: 'red',
+      direction: 'alternate',
+      easing: 'easeInOutSine',
+      duration: 500
+    })
+    anime({
+      targets: '#rightBar',
+      height: ['98%', '15%'],
+      duration: 500,
+      direction: 'alternate',
+      easing: 'easeInOutSine',
+    })
+  }
+
+
+  render() {
+    return (
+      <div id="container">
+        <div id="leftBar" className="sideBar" onClick={this.handleBarClick}></div>
+        <div id="rightBar" className="sideBar" onClick={this.handleBarClick}></div>
+      </div>
+    )
+  }
 }
 
 export default App

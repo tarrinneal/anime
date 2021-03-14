@@ -1,6 +1,23 @@
-#vivi {
-  height: 250px;
-  width: 250px;
-  object-fit: contain;
-  /* transform: scaleX(-1); */
+body {
+  overflow: hidden;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+}
+
+.sideBar {
+  background-color: darkgray;
+  height: 98vh;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#leftBar {
+  grid-column: 1;
+}
+
+#rightBar {
+  grid-column: 10;
 }
