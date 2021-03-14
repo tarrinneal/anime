@@ -1,10 +1,11 @@
 {
-  "name": "fullStackSkeleton",
+  "name": "Anime.js",
   "version": "1.0.0",
-  "description": "Empty repo with express, mysql, mongo/mongoose, react, babel, and webpack",
+  "description": "Animejs",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server",
+    "start": "node server",
+    "start-dev": "nodemon server",
     "build": "webpack",
     "watch": "webpack -w",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +14,7 @@
   "author": "Tarrin",
   "license": "ISC",
   "dependencies": {
+    "animejs": "^3.2.1",
     "axios": "^0.20.0",
     "express": "^4.17.1",
     "jquery": "^3.5.1",

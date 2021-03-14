@@ -1,0 +1,6 @@
+#vivi {
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
+  /* transform: scaleX(-1); */
+}
