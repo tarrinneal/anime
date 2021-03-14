@@ -13,8 +13,8 @@ class App extends React.Component {
     anime({
       targets: '#leftBar',
       translateY: [0, 150],
-      width: ['100%', '500%'],
-      backgroundColor: 'red',
+      width: ['100%', '1000%'],
+      backgroundColor: ['rgb(169, 169, 169)', '#FFF'],
       direction: 'alternate',
       easing: 'easeInOutSine',
       duration: 500
