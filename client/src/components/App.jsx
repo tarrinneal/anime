@@ -9,7 +9,7 @@ class App extends React.Component {
       columns: 0,
       rows: 0,
       total: 1,
-      timesClicked: 0,
+      timesClicked: -4,
     };
     this.handleStagger = this.handleStagger.bind(this);
     this.getGridSize = this.getGridSize.bind(this);
@@ -82,18 +82,38 @@ class App extends React.Component {
 
   render() {
     const { total, columns, rows, timesClicked } = this.state;
-    console.log([columns, rows], total);
+
     return (
       <div>
-        {timesClicked === 0 ? (
-          <video autoPlay muted onClick={this.handleStagger}>
-            <source src="anime.mp4" type="video/mp4" />
-          </video>
+        {timesClicked < 0 ? (
+          timesClicked === -4 ? (
+            <video autoPlay muted onClick={this.handleStagger}>
+              <source src="anime.mp4" type="video/mp4" />
+            </video>
+          ) : timesClicked === -3 ? (
+            <div id="pageOne" onClick={this.handleStagger}>
+              <h1>This Is A Header</h1>
+              <p>Information goes here</p>
+              <p>This is also information</p>
+            </div>
+          ) : timesClicked === -2 ? (
+            <div id="pageTwo" onClick={this.handleStagger}>
+              page 2
+            </div>
+          ) : timesClicked === -1 ? (
+            <div id="pageThree">
+              <form onSubmit={this.handleStagger}>
+                <textarea />
+                <input type="submit" />
+              </form>
+            </div>
+          ) : null
         ) : (
           <div id="grid">
             {[...Array(total)].map((x, i) => (
               <div className="grid-item" id={i} onClick={this.handleStagger} />
             ))}
+
             {timesClicked === 19 ? <div id="thatsAll">THAT'S ALL!</div> : null}
             {timesClicked === 20 ? (
               <div id="survey">Now I will send out your forms!</div>

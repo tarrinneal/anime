@@ -1,11 +1,3 @@
-/* body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-} */
 body {
   background: black;
   margin: 0;
@@ -58,6 +50,12 @@ body {
   left: 40%;
 }
 
+#pageOne, #pageTwo {
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
 
 /* Logo */
 
