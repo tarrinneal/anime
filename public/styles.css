@@ -33,6 +33,14 @@ body {
   font-family: Arial, Helvetica, sans-serif ;
 }
 
+#pres {
+  height: 700px;
+  width: 1200px;
+  border: darkgray 3px solid;
+  border-radius: 5px;
+  text-align: center;
+}
+
 #thatsAll {
   z-index: 2;
   background: none;
@@ -52,9 +60,64 @@ body {
 
 #pageOne, #pageTwo {
   color: white;
-  position: absolute;
-  top: 20%;
-  left: 20%;
+}
+
+h1 {
+  margin-bottom: 200px;
+  font-size: xxx-large;
+}
+
+p {
+  font-size: x-large;
+}
+
+#pageFour {
+  color: black;
+  z-index: 5;
+}
+
+#liveCoding {
+  height: 300px;
+  width: 300px;
+  background: none;
+  border: none;
+  color: white;
+  resize: none;
+  font-size: xx-large;
+}
+
+#liveCoding:focus {
+  outline: none;
+}
+
+#red {
+  background: black;
+  height: 1px;
+  width: 1px;
+}
+
+#runcode {
+  height: 50px;
+  width: 300px;
+  border: none;
+  font-size: x-large;
+  background: none;
+  color: black;
+  transition-duration: .5s;
+}
+
+#runcode:hover {
+  height: 50px;
+  width: 300px;
+  border: none;
+  font-size: x-large;
+  background-color: rgb(87, 87, 87);
+  color: aliceblue;
+  transition-duration: .5s;
+}
+
+#runcode:focus {
+  outline: none;
 }
 
 /* Logo */
