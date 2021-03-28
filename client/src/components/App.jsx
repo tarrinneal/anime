@@ -187,7 +187,7 @@ class App extends React.Component {
                 <h1>Why use Anime.js?</h1>
                 <p>Much simpler to write than css animations</p>
                 <p>Allows you to write your animations directly in javascript</p>
-                <p>Can create different animations, effects, properties, synchronize multiple instances, and control all animation features</p>
+                <p>Built in additional functionality (I'll show some of this shortly)</p>
               </div>
             </div>
           ) : timesClicked === -2 ? (
