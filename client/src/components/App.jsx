@@ -82,8 +82,8 @@ class App extends React.Component {
           backgroundColor: '#F00',
           scale: 50,
           translateY: '-1px',
-          duration: 2000,
-          easing:
+          duration: 1000,
+          easing: 'easeInOutExpo'
         });
         break;
       case 1:
@@ -201,6 +201,7 @@ class App extends React.Component {
               <div id="red" />
               <form onSubmit={this.handleSmallDemos}>
                 <textarea id="liveCoding" />
+                <br/>
                 <input id="runcode" type="submit" value="Run Code"/>
               </form>
             </div>
@@ -233,3 +234,14 @@ class App extends React.Component {
 }
 
 export default App;
+
+
+// anime({
+//   targets: '#red',
+//   translateX: 250,
+//   rotate: '1turn',
+//   backgroundColor: '#FFF',
+//   borderRadius: ['0%', '50%'],
+//   easing: 'easeInOutQuad',
+//   duration: 1000
+// });
